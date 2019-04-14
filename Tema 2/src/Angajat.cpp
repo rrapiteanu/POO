@@ -3,7 +3,7 @@
 #include <string.h>
 
 Angajat::~Angajat() {
-  delete [] nume;
+    delete [] nume;
 }
 
 Angajat::Angajat() {
@@ -19,13 +19,13 @@ Angajat::Angajat(char* n, float sal) {
 }
 
 Angajat::Angajat(const Angajat &r) {
-     this->salariu = r.salariu;
-     this->nume = new char[strlen(r.nume) + 1];
-     strcpy(nume, r.nume);
+    this->salariu = r.salariu;
+    this->nume = new char[strlen(r.nume) + 1];
+    strcpy(nume, r.nume);
 }
 
 void Angajat::display() {
-     std::cout << "Angajat: [" << this->nume<<"] Salariu: [" << this->salariu << "] ";
+    std::cout << "Angajat: [" << this->nume<<"] Salariu: [" << this->salariu << "] ";
 }
 
 float Angajat::getSalariu() {
